@@ -16,9 +16,105 @@
     <title>Olivia's Weather Forecast</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Hello World</h1>
-      <a href="" class="btn btn-primary">Click me</a>
+    <div id="root">
+      <div class="App">
+        <div class="container">
+          <div class="Weather">
+            <a href="" targe="_blank" class="logo"></a>
+            <form>
+              <div class="row">
+                <div class="col-9">
+                  <input
+                    type="search"
+                    placeholder="Enter a city..."
+                    class="form-control search-input"
+                  />
+                </div>
+                <div class="col-3 p-0">
+                  <input
+                    type="submit"
+                    class="btn btn-primary w-100"
+                    value="Search"
+                  />
+                </div>
+              </div>
+            </form>
+            <div class="WeatherInfo">
+              <div class="row">
+                <div class="col-6">
+                  <h1>New York</h1>
+                  <ul>
+                    <li><span> Monday 11:42</span>, clear sky</li>
+                    <li>
+                      Humidity: <strong>42%</strong>, Wind:
+                      <strong>6.69 km/h</strong>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <div class="temperature-container d-flex justify-content-end">
+                    <span class="temperature">9</span>
+                    <span class="unit">°C</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="WeatherForecast row">
+              <div class="col">
+                <div class="WeatherForecastPreview">
+                  <div class="forecast-time">Mon</div>
+                   <div class="forecast-temperature">
+                    <span class="forecast-temperature-max">11°</span>
+                    <span class="forecast-temperature-min">-1°</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="WeatherForecastPreview">
+               <div class="forecast-time">Tue</div>
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">11°</span>
+                  <span class="forecast-temperature-min">-1°</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="WeatherForecastPreview">
+               <div class="forecast-time">Wed</div>
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">11°</span>
+                  <span class="forecast-temperature-min">-1°</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="WeatherForecastPreview">
+               <div class="forecast-time">Thu</div>
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">11°</span>
+                  <span class="forecast-temperature-min">-1°</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="WeatherForecastPreview">
+               <div class="forecast-time">Fri</div>
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">11°</span>
+                  <span class="forecast-temperature-min">-1°</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+            <footer>Coded by Olivia Barone.</footer>  
+        </div>
+    </div>      
     </div>
     <script src="app.js"></script>
   </body>
