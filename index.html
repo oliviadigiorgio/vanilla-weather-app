@@ -11,6 +11,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link href="style.css" rel="stylesheet" />
 
     <title>Olivia's Weather Forecast</title>
@@ -41,22 +42,19 @@
             <div class="WeatherInfo">
               <div class="row">
                 <div class="col-6">
-                  <h1>New York</h1>
+                  <h1 id="city"></h1>
                   <ul>
-                    <li>
-                        <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" 
-                        alt="Partly Cloudy"
-                        class="float-left"/>
-                        <span> Monday 11:42</span>, partly cloudy</li>
-                    <li>
-                      Humidity: <strong>42%</strong>, Wind:
-                      <strong>6.69 km/h</strong>
-                    </li>
+                    <li>Last updated: <span id="date"></span></li>
+                    <li id="description"></li>
+                    <li>Humidity: <strong><span id="humidity"></span>%</strong>, Wind: <strong><span id="wind"></span>km/h</strong></li>
                   </ul>
                 </div>
                 <div class="col-6">
                   <div class="temperature-container d-flex justify-content-end">
-                    <span class="temperature">9</span>
+                    <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" 
+                        alt="Partly Cloudy"
+                        class="float-left"/>
+                    <span class="temperature" id="temperature"></span>
                     <span class="unit">°C</span>
                   </div>
                 </div>

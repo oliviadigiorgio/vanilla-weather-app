@@ -32,6 +32,10 @@ li {
   margin-bottom: 5px;
 }
 
+li:first-letter{
+  text-transform: capitalize;
+}
+
 li strong {
   color: purple;
   font-weight: normal;
@@ -46,12 +50,12 @@ li strong {
   color: rgb(33, 33, 33);
   margin-left: 5px;
   font-weight: 600;
-  font-size: 80px;
+  font-size: 60px;
   line-height: 1;
 }
 
 .temperature-container {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .Weather ul {
