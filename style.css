@@ -32,7 +32,7 @@ li {
   margin-left: 2px;
 }
 
-li:first-letter{
+li:first-letter {
   text-transform: capitalize;
 }
 
@@ -42,24 +42,30 @@ li strong {
 }
 
 .WeatherInfo {
-  margin: 30px 0 30px;
+  margin: 30px 30px 30px 0px;
 }
 
 .temperature {
   font-weight: bold;
   color: rgb(33, 33, 33);
-  margin-left: 5px;
   font-weight: 600;
   font-size: 60px;
   line-height: 1;
   margin-top: 20px;
+  margin-right: 10px;
 }
-.unit{
+
+.temperature-container .unit {
   margin-top: 20px;
 }
 
-.temperature-container {
-  margin-right: 20px;
+.temperature-container .active{
+  color: black;
+  cursor: default;
+}
+
+.temperature-container .active:hover{
+  text-decoration: none;
 }
 
 .Weather ul {
